@@ -1,0 +1,14 @@
+// flex布局
+@mixin flexLayout($row:normal, $column:center, $wrap:nowrap) {
+  display: flex;
+  justify-content: $row;
+  align-items: $column;
+  flex-wrap: $wrap;
+}
+
+// 超出显示范围省略号显示
+@mixin ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
